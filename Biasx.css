@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  height: 60px;
+  border-bottom: 1px solid rgb(181, 176, 176);
+
+}
+
+.header_img {
+  margin-left: 9%;
+  width: 150px;
+  height: auto;
+}
+
+.content {
+  background-color: rgb(246, 246, 246);
+  flex: 1;
+  padding: 20px;
+}
+
+.href {
+
+  margin-left: 8%;
+}
+
+.Ximg {
+  width: 120px;
+  height: auto;
+}
+
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: center;
+}
