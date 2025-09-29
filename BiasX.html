@@ -6,28 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="Biasx.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Changa+One:ital@0;1&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
 </head>
 
 <body>
   <header class="header">
-    <img><img src="https://web-assets.positivegrid.com/bigcommerce/icons/logotype.svg" alt="positivegrid"
-      class="header_img"></div>
+    <a href="https://www.positivegrid.com/"><img
+        src="https://web-assets.positivegrid.com/bigcommerce/icons/logotype.svg" alt="positivegrid"
+        class="header_img" /></a>
   </header>
   <main class="content">
-    <div class="href">
+    <div class="breadcrumbs">
       <a href="https://www.positivegrid.com/">Home</a>>
-      <buttom>Learn</buttom>>
-      <buttom>BIAS FX 2</buttom>
+      <button>Learn</button>>
+      <button>BIAS FX 2</button>
     </div>
-    <img src="https://web-assets.positivegrid.com/bigcommerce/learn/l-2201.png" class="Ximg" alt="X">
-    <h1><img src="https://web-assets.positivegrid.com/bigcommerce/learn/l-2201.png" class="Ximg">BIAS X</h1>
-
-
+    <div class="bias__logo">
+      <img src="https://web-assets.positivegrid.com/bigcommerce/learn/l-2201.png" class="Ximg" alt="X">
+      <h1 class="Logo__text">BIAS X</h1>
+    </div>
+    <div class="content--grid">
+      <nav>
+        <ul id="myList">
+          <li><span>A</span></li>
+          <li><span>B</span></li>
+          <li><span>C</span></li>
+          <li><span>D</span></li>
+          <li><span>E</span></li>
+          <li><span>F</span></li>
+        </ul>
+      </nav>
+      <div id="videoContainer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fKB_bdxIbdI" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
   </main>
+  <script>
+    const listItems = document.querySelectorAll('#myList li');
+    listItems.forEach(item => {
+      item.addEventListener('click', () => {
+        listItems.forEach(li => li.style.color = '');
+        item.style.color = 'black';
+      });
+    });
+  </script>
 </body>
-<content>
 
-</content>
 
 </html>

@@ -1,47 +1,79 @@
-html,
-body {
-  margin: 0;
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
-  display: flex;
-  height: 60px;
-  border-bottom: 1px solid rgb(181, 176, 176);
-
-}
-
-.header_img {
-  margin-left: 9%;
-  width: 150px;
-  height: auto;
-}
-
-.content {
-  background-color: rgb(246, 246, 246);
-  flex: 1;
-  padding: 20px;
-}
-
-.href {
-
-  margin-left: 8%;
-}
-
-.Ximg {
-  width: 120px;
-  height: auto;
-}
+  body {
+    margin: 0;
+    height: 100%;
+  }
 
 
-h1 {
-  font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  justify-content: center;
-}
+
+  .header {
+    display: flex;
+    padding: 0 100px;
+    height: 60px;
+    border-bottom: 1px solid rgb(181, 176, 176);
+    align-items: center;
+  }
+
+  .header_img {
+    display: block;
+    width: 150px;
+    height: auto;
+  }
+
+  .content {
+    background-color: rgb(246, 246, 246);
+    flex: 1;
+    padding: 0 100px;
+  }
+
+  .breadcrumbs {
+    padding-top: 24px;
+  }
+
+
+  .Ximg {
+    width: 120px;
+    height: auto;
+  }
+
+
+
+  .bias__logo {
+    padding: 56px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .Logo__text {
+
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+  }
+
+
+
+  nav li {
+    display: inline;
+
+    font-family: "Press Start 2P";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: gray;
+  }
+
+  nav li span {
+    cursor: pointer;
+  }
+
+  .content--grid {
+    display: grid;
+  }
